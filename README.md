@@ -5,7 +5,7 @@
 
 ## Project Overview
 
-This repository is a lab for practicing It provides a verified setup using `pandas` and `matplotlib`, a validation script (`test_environment.py`).
+Create a reproducible Python environment to analyze hospital admission data for the hospital system.
 
 ---
 
