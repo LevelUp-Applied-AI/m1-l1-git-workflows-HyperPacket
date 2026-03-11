@@ -1,41 +1,74 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/FdVrU54p)
-# [Project Title — e.g., Hospital Admission Records Analysis]
+# Hospital Admission Records Analysis
 
-> **Lab 1 starter repo** — Replace the heading above with your project title. Team member names are not part of the lab — they go in Section 2 of your completed README in the integration task.
+## Team Members
 
----
+- Zaid
+- Diala
 
 ## Project Overview
 
-TODO: Write 2–3 sentences describing what this project does and who it is for.
+This project analyzes hospital admission records to identify trends in patient intake and resource utilization. The insights are intended for hospital administrators to optimize staffing and reduce wait times.
 
----
+## Data Sources
+
+Data is not tracked in this repository. See the setup instructions below
+for how to obtain and place the data files before running any analysis.
+
+_Data should be placed in `data/raw/admissions.csv`._
 
 ## Setup Instructions
 
-TODO: Complete these setup steps after creating your `requirements.txt`:
-
 ```bash
+git clone <repo-url>
+cd <repo-name>
 python -m venv .venv
-
-# Activate — choose the command for your OS:
-# Mac / Linux:      source .venv/bin/activate
-# Windows Git Bash: source .venv/Scripts/activate
-# Windows CMD:      .venv\Scripts\activate.bat
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-
-pip install -r requirements.txt
-python test_environment.py    # should print "Environment OK"
 ```
 
----
+Activate the virtual environment — choose the command for your OS:
+
+```bash
+# Mac / Linux
+source .venv/bin/activate
+
+# Windows Git Bash
+source .venv/Scripts/activate
+
+# Windows CMD
+.venv\Scripts\activate.bat
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+```
+
+Once activated, install dependencies and verify the environment:
+
+```bash
+pip install -r requirements.txt
+python test_environment.py
+```
+
+`test_environment.py` should print "Environment OK" when the setup is correct.
+
+## Project Structure
+
+```text
+aispire-foundations/
+├── README.md             — Project overview and setup instructions
+├── CHANGELOG.md          — Record of notable changes
+├── AGENTS.md             — AI contribution policy
+├── requirements.txt      — Python dependencies
+├── setup.sh              — Automated environment setup script
+├── test_environment.py   — Environment validation
+├── .gitignore            — Files excluded from version control
+├── src/                  — Production source code (importable modules)
+├── notebooks/            — Exploratory analysis notebooks
+├── data/                 — Data directory (contents not committed to Git)
+│   └── raw/              — Original unmodified data files
+└── tests/                — Automated tests
+```
 
 ## Contributing
 
-- Branch naming: `setup/`, `feature/`, `fix/`
+- Branch naming convention: e.g., `feature/`, `setup/`, `fix/`
 - Open a PR to `main` for all changes
 - Commit messages: imperative mood, ≤ 50 characters
-
----
-
-*Starter file for Lab 1 — lab-1-git-workflows | aispire-14005*
